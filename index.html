@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Первый урок Зубюк В.Н.</title>
+    <script type="text/javascript">
+        
+        function checkAnswers() {
+            let userAnswer = document.getElementById('userAnswer1').value;
+            userAnswer = parseFloat(userAnswer);
+            console.log((9 / 5) * userAnswer + 32);
+        }
+        
+        function copyAdmin() {
+            let name = 'Василий';
+            let admin;
+            admin = name;
+            console.log(admin);
+        }
+        
+        function what() {
+            console.log('JS-выражение 1000 + "108" будет равно ' + 1000 + "108");
+        }
+        
+        function asyDef() {
+            console.log('Два атрибута тега <script> async и defer существуют для того, чтоб дать браузеру команду не ждать загрузку всех скриптов, а продолжать строить DOM Атрибут defer сообщает браузеру, что он должен продолжать обрабатывать страницу и загружать скрипт в фоновом режиме, а затем запустить этот скрипт, когда он загрузится. Атрибут defer работает только, если скрипты подключаются из внешнего файла. Атрибут async означает, что скрипт абсолютно независим. Остальные скрипты не ждут async, и скрипты c async не ждут другие скрипты.Так что если у нас есть несколько скриптов с async, они могут выполняться в любом порядке. То, что первое загрузится – запустится в первую очередь.');
+        }
+        
+    </script>
+</head>
+<body>
+    
+    <h1>Игра в загадки</h1>
+
+    <div>
+
+        <p>Введите температуру в градусах по Цельсию</p>
+        <input type="text" id="userAnswer1"> <br>
+        <button href="#" onClick="checkAnswers();">Перевести</button> <br>
+        <button href="#" onClick="copyAdmin();">Вывести имя</button> <br>
+        <button href="#" onClick="what();">Чему будет равно JS-выражение 1000 + "108"</button>  <br>
+        <button href="#" onClick="asyDef();">Самостоятельно разобраться с атрибутами тега script (async и defer)</button> <br>
+
+    </div>
+    
+</body>
+</html>
